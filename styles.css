@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.name{
+    justify-content: left;
+    text-align: left;
+    color: #000; /* Black color */
+    font-weight: bold; /* Bold text */
+
+}
+#contentToCapture {
+    text-align: center;
+    border:solid black 2px ;
+}
+
+table {
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+input[type="text"] {
+    width: 40%; /* Make input fields fill the container */
+    box-sizing: border-box;
+}
+
+section {
+    margin: 20px auto; /* Center the section */
+    text-align: center; /* Reset text alignment for the section content */
+}

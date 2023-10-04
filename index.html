@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Creator</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <br>
+    <head>
+        <h2>Invoice creator</h2>
+    </head>
+    
+    <button id="captureButton">Capture Screen</button>
+<br>
+
+<div id="contentToCapture">
+    <div class="name"><p class="name">Tomas avaro Acosta professional OBC</p></div>
+    <p>Company</p>
+    <input type="text">
+    <p>Invoice number</p>
+    <input type="text">
+    <p>Reference</p>
+    <input type="text">
+    
+    <table border="1">
+        <tr>
+            <td>Description</td>
+            <td>Date</td>
+            <td>Foreign Currency</td>
+            <td>Quantity</td>
+            <td>Unitary Price</td>
+            <td>Amount in Euro</td>
+        </tr>
+        <tr>
+            <td>Obc service</td>
+            <td><input type="text" name="dateOBC"></td>
+            <td><input type="text" name="column3"></td>
+            <td><input type="text" name="quantityOBC" id="quantityOBC"></td>
+            <td><input type="text" name="unitaryPriceOBC" id="unitaryPriceOBC"></td>
+            <td><input type="text" name="amountEuroOBC" id="amountEuroOBC" readonly></td>
+        </tr>
+        <tr>
+            <td>Transport</td>
+            <td><input type="text" name="dateTransport"></td>
+            <td><input type="text" name="foreignCurrencyT"></td>
+            <td><input type="text" name="quantity"></td>
+            <td><input type="text" name="unitaryPriceT"></td>
+            <td><input type="text" name="AmountET" id="totalT"></td>
+        </tr>
+        <tr>
+            <td>Lunch</td>
+            <td><input type="text" name="dateLunch"></td>
+            <td><input type="text" name="foreignCurrencyL"></td>  
+            <td><input type="text" name="quantity" id="quantityL"></td>
+            <td><input type="text" name="unitaryPriceL"></td>
+            <td><input type="text" name="AmountEL" id="totalL"></td>
+        </tr>
+        <tr>
+            <td>Hotel</td>
+            <td><input type="text" name="dateHotel"></td>
+            <td><input type="text" name="foreignCurrencyH"></td>
+            <td><input type="text" name="quantity"></td>
+            <td><input type="text" name="unitaryPriceH"></td>    
+            <td><input type="text" name="AmountEH" id="totalH"></td>
+        </tr>
+        <tr><td>total net</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" name="totalNet" id="totalNet"></td>
+        </tr>
+        <tr>
+            <td>total amount(total net+25%VAT)</td>
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td><input type="text" name="TotalAmount" id="totalAmount"></td>
+        </tr>
+    </table>
+    <p>I confirm that I am a independent freelance subcontractor and I am responsible for paying my own tax and all other relevant deductions.</p>
+        <p>Thank you for your business,I look forward to working with you again in the near future</p> <br>
+
+    <section>
+        <div>
+            <p>Please arrange for payment to: <br>
+                <p>name/company:Tomas Avaro Acosta</p>
+                <p>account number/IBAN:DK6330003655382356</p>
+                <p>Bank name:Danske</p>
+                <p>Swift/BIC:DABADKKK</p>
+
+
+            </p><br><br>
+            <p>Tomas Avaro Acosta// Jakkob Knundses Vej 2 PC:2500 Valvy, Copenhagen, Denmark.</p><br>
+            <p>CVR(TaxId):43198084 // Cellphone:+4571402766 // E-mail:tomas1995aa@gmail.com</p>
+
+        </div>
+    </section>
+
+</div>
+
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
