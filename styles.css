@@ -5,6 +5,12 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+#companyName {
+    box-sizing: content-box;
+}
+#date {
+    width: 20%; /* You can adjust the value to the desired width */
+}
 .name{
     justify-content: left;
     text-align: left;
@@ -28,7 +34,7 @@ table, th, td {
 }
 
 input[type="text"] {
-    width: 40%; /* Make input fields fill the container */
+    width: 50%; /* Make input fields fill the container */
     box-sizing: border-box;
 }
 
